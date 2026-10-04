@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import type { ClaimItem } from '../types';
 import { getAssessmentConfig } from '../utils/display';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface ClaimCardProps {
   claim: ClaimItem;
@@ -9,7 +7,6 @@ interface ClaimCardProps {
 }
 
 function ClaimCard({ claim, index }: ClaimCardProps) {
-  const [expanded, setExpanded] = useState(false);
   const assessment = getAssessmentConfig(claim.assessment);
   const confidencePct = Math.round(claim.confidence * 100);
 

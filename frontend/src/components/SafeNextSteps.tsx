@@ -1,4 +1,4 @@
-import { CheckCircle } from 'lucide-react';
+
 
 interface SafeNextStepsProps {
   steps: string[];

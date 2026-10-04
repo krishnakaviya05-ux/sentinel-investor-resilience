@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { Send, AlertCircle, ChevronRight, Lock } from 'lucide-react';
 
 const MAX_CHARS = 10000;
